@@ -26,3 +26,8 @@ este codigo cumple la función de un contador temporizado con notificación vía
 [TOCM]
 
 [TOC]
+
+#H1 header
+##H2 header
+###H3 header
+
