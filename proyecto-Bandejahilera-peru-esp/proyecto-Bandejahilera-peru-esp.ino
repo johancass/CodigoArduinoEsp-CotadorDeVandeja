@@ -50,8 +50,13 @@ byte Hielo2_2[] = {
 uint8_t Clock[8] = { 0x0, 0xe, 0x15, 0x17, 0x11, 0xe, 0x0 };
 
 
+#if defined(ESP32)
+const byte VandejaInpin = 22, Btn2 = 21, Btn1 =24 ;  //pin gpio Esp32
+#elif defined(ESP8266)
+const byte VandejaInpin = 2, Btn2 = 0, Btn1 = 14;  //pin gpio Esp8266
+#else
+
 LiquidCrystal_I2C lcd(0x27, 20, 4);                // set the LCD address to 0x27 for a 16 chars and 2 line display
-const byte VandejaInpin = 2, Btn2 = 0, Btn1 = 14;  //pin de laentrada de coin del monedero
 long TiempoAlarma = 5000, tiempo1;
 long pulsos = 0, NmeroMult = 3, ContPduc = 0;
 boolean BanderaAlarma = 0, BanderraMenu = 0, PulsoAnterior;
