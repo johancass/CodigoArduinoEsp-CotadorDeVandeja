@@ -8,9 +8,10 @@ este codigo cumple la función de un contador temporizado con notificación vía
 - 2bottones pulsadores Na;
 - 1micro switch;
 - 
+### libreria WifiManger:https://github.com/tzapu/WiFiManager
 ### Contenido
 
-- Cdigo arduino compatible con lastarjetas de desarillo Esp32 y Esp82;
+- Cdigo arduino compatible con las tarjetas de desarillo Esp32 y Esp82;
 - magen de digrama didactico de conexiones;
 - licencia pache de uso libre;
 
